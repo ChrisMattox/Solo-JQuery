@@ -17,7 +17,9 @@ $(document).ready(function() {
   }
 
   function updateTracker(color){
-    $('#'+ color).replaceWith('<p>Total ' + color);
+    var colorCount = 0;
+    colorCount++;
+    $('#'+ color).replaceWith('<p>Total ' + color + " :" + colorCount);
 
   }
 
